@@ -3,7 +3,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   context: __dirname,
-  entry: './src',
+  entry: './src/index.ts',
   output: {
     path: path.join(__dirname, 'dist'),
     library: {
@@ -14,8 +14,16 @@ module.exports = {
   devtool: 'source-map',
   module: {
     rules: [
-      { test: /\.js$/, loader: 'babel-loader', include: path.resolve(__dirname, 'src') },
-      // { test: /\.json$/, loaders: ['json'], include: context },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: path.resolve(__dirname, 'src'),
+      },
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader',
+        include: path.resolve(__dirname, 'src'),
+      },
     ],
   },
   optimization: {
