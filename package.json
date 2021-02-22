@@ -1,6 +1,6 @@
 {
-  "name": "texttosvg",
-  "version": "1.0.0",
+  "name": "@toddlowell/texttopath",
+  "version": "1.0.1",
   "description": "Get path values for a given text and font.",
   "main": "dist/index.js",
   "files": [
@@ -21,6 +21,11 @@
     "validate": "npm-run-all --parallel lint test:coverage build"
   },
   "author": "Raaed M. Kabir <raaed.kabir@gmail.com> (https://www.raaedkabir.com/)",
+  "homepage": "https://www.raaedkabir.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToddLowell/text-to-svg-path.git"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
