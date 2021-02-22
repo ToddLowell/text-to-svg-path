@@ -23,6 +23,8 @@
   "author": "Raaed M. Kabir <raaed.kabir@gmail.com> (https://www.raaedkabir.com/)",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "opentype.js": "^1.3.3"
   },
   "devDependencies": {
