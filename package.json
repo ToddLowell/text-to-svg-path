@@ -1,6 +1,6 @@
 {
   "name": "@toddlowell/texttopath",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get path values for a given text and font.",
   "main": "dist/index.js",
   "files": [
